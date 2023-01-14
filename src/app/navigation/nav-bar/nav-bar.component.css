@@ -1,0 +1,47 @@
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 120px;
+}
+a:hover, a:active{
+  color: rgb(128, 128, 128);
+}
+.navigation-items{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+.mat-toolbar{
+  border-radius: 3px;
+  font-size: 30px;
+}
+@media(max-width: 959px){
+  mat-toolbar{
+      border-radius: 0px;
+  }
+}
+.mat-list-item{
+  padding: 120;
+  font-size: medium;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar{
+  padding: 0;
+  background-color:transparent;
+  /* background-color: rgb(53, 53, 53); */
+}
+
+#logo{
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+  color: rgb(64, 15, 31);
+  font: italic small-caps bold 30px/2 cursive;
+}

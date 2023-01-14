@@ -1,0 +1,54 @@
+/* .main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  } */
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #EAEFF3;
+}
+
+mat-card {
+    width: 98%;
+    max-width: 400px;
+}
+
+mat-card-header{
+    display: block;
+    text-align: center;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+#btn-login{
+    width: 100%;
+}
+
+mat-error{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: smaller;
+}

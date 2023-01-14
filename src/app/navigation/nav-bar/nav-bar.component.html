@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <!-- <div fxHide.gt-xs>
+      <button mat-icon-button (click)="onToggleSidenav()">
+          <mat-icon>menu</mat-icon>
+      </button>
+  </div> -->
+  <div>
+      <a routerLink="/home" id="logo">Projet Angular</a>
+  </div>
+    <a mat-list-item routerLink="/detailProjet" >
+ 
+        <span class="nav-caption">Readme</span>
+    </a>
+    <a mat-list-item routerLink="/home">
+
+        <span class="nav-caption">Liste des assignments</span>   
+    </a>
+    <a mat-list-item routerLink="/add">
+
+        <span class="nav-caption">Ajouter un assignement</span>
+    </a>
+    <nav>
+        <mat-icon (click)="logout()">logout</mat-icon>
+    </nav>
+</mat-toolbar>
