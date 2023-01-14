@@ -23,10 +23,10 @@ export class AuthService {
     });
   }
   inscription(data:any):Observable<any>{
-    return this.http.post('http://localhost:8010/api/register',data);
+    return this.http.post('https://assignment-api.herokuapp.com/api/register',data);
   };
   login(data:any):Observable<any>{
-    return this.http.post('http://localhost:8010/api/login',data);
+    return this.http.post('https://assignment-api.herokuapp.com/api/login',data);
   }
   constructor(private http:HttpClient) {}
 }
