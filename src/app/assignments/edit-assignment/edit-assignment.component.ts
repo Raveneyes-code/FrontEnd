@@ -18,7 +18,7 @@ export class EditAssignmentComponent implements OnInit {
   dateDeRendu!:Date;
   note!:Number;
   matiere:string="";
-
+  remarque:string="";
   myControl = new FormControl('');
   options: string[] = ['C++', 'C#', 'Angular','Java','Anglais','Machine learning','	Management de projet','TypeScript','Dev Mobile'];
   filteredOptions: Observable<string[]> | undefined;
@@ -65,6 +65,7 @@ export class EditAssignmentComponent implements OnInit {
       this.dateDeRendu = assignment.dateDeRendu;
       this.note=assignment.note;
       this.matiere=assignment.matiere;
+      this.remarque=assignment.remarque;
     });
   }
   onSaveAssignment() {
@@ -72,12 +73,13 @@ export class EditAssignmentComponent implements OnInit {
     if(!this.assignment) return;
     if(!this.note) return;
     if(!this.matiere) return;
+    if(!this.remarque) return;
     // On modifie l'assignment
     this.assignment.titre = this.nomAssignment;
     this.assignment.dateDeRendu = this.dateDeRendu;
     this.assignment.note = this.note;
     this.assignment.matiere = this.matiere;
-
+    this.assignment.remarque = this.remarque;
     // On envoie l'assignment modifié au service
     // qui va faire la requête HTTP
     // On va naviguer vers la page d'accueil
