@@ -1,0 +1,14 @@
+div {
+            width: 80%;
+            height: 100%;
+            background-color: transparent;
+            padding: 20px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            margin: auto;
+        }
+        p {
+            margin: 0 0 10px;
+        }
