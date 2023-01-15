@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
     this.auth.login(data).subscribe((res: { success: any; token: string; })=>{
       if(res.success){
         localStorage.setItem('token', res.token)
-        this.router.navigate(['/home']);
+        this.router.navigate(['/detailProjet']);
         this.toast.success({detail:'Success Message',summary:'Login successful',position:"tr",duration:3000});
       }else{
         alert('error')
